@@ -28,8 +28,16 @@ class CsvParser
   end
 
   def get_chosen_values
-    CommunicationDisplay.chosen_ur_keys(keys: array_of_hash.first.keys)
+    chose_ur_keys
     @chosen_values = gets.chomp.split(',')
+    chosen_keys
+  end
+
+  def chose_ur_keys
+    CommunicationDisplay.chose_ur_keys(keys: array_of_hash.first.keys)
+  end
+
+  def chosen_keys
     CommunicationDisplay.chosen_keys
   end
 

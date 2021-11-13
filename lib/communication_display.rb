@@ -8,7 +8,7 @@ class CommunicationDisplay
     p "Choisissez le chiffre correspondant au fichier csv choisi"
   end
   
-  def self.chosen_ur_keys(keys: )
+  def self.chose_ur_keys(keys: )
     p "Quelles clés veux tu récuperez ?"
     p keys
   end
