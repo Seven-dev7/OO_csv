@@ -1,9 +1,6 @@
 require_relative 'communication_display'
 
 class FileFinder
-  def initialize
-  end
-
   def call
     display_file
     choose_file
@@ -24,9 +21,13 @@ class FileFinder
   end  
 
   def choose_file
-    CommunicationDisplay.chosen_value
+    display_chosen_value
     value = gets.chomp.to_i
     csv_chosen = get_csv_folder[value - 1]
     file = File.read("../OO/csv_files/#{csv_chosen}")
-  end 
+  end
+
+  def display_chosen_value
+    CommunicationDisplay.chosen_value
+  end
 end
