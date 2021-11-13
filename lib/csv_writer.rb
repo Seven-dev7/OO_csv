@@ -9,7 +9,7 @@ class CsvWriter
 
   def call
     new_csv
-    CommunicationDisplay.get_ur_file
+    get_ur_file
   end
 
   private
@@ -34,5 +34,9 @@ class CsvWriter
 
   def csv_writer(csv:)
     File.write('../OO/new_csv/new_csv.csv', csv)
+  end
+
+  def get_ur_file
+    CommunicationDisplay.get_ur_file
   end
 end
