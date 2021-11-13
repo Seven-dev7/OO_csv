@@ -6,3 +6,6 @@ rvm use 3.0.0
 bundle install
 ruby app.rb
 Enjoy !
+
+
+For now: only 2 values can be chosed
